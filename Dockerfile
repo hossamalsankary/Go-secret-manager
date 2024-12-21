@@ -31,8 +31,14 @@ COPY ./static ./static
 RUN chmod +x ./secret-server
 
 ENV VAULT_IPS="41.235.69.116,127.0.0.1"
+
 # Expose the port the app will run on
 EXPOSE 8080
+# Disable interactive login shells
+RUN echo "exit" > /etc/profile
+RUN echo "exit" > /etc/bash.bashrc
+RUN ln -sf /bin/true /bin/sh
+RUN ln -sf /bin/true /bin/bash
 
 # Run the Go application
 CMD ["./secret-server"]
