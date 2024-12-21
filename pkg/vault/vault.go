@@ -32,8 +32,9 @@ func GetVaultToken(w http.ResponseWriter, r *http.Request) {
 
 	// Trim any surrounding whitespace
 	clientIp = strings.TrimSpace(clientIp)
-
+	fmt.Println(clientIp)
 	// Check if the client IP is in the allowed list
+
 	var ok bool
 	for _, ip := range ipList {
 		if clientIp == strings.TrimSpace(ip) {
