@@ -25,7 +25,7 @@ WORKDIR /app/
 # Copy the built application from the builder stage
 COPY --from=builder /app/secret-server .
 
-COPY ./static ./static
+
 
 # Ensure the binary is executable
 RUN chmod +x ./secret-server
