@@ -43,6 +43,7 @@ func GetVaultToken(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if !ok {
+		w.WriteHeader(http.StatusForbidden)
 		http.Error(w, fmt.Sprintf("opps Forbidden access from this IP %s", clientIp), http.StatusForbidden)
 		return
 	}
