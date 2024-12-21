@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	Json "telnetapp/pkg/json"
+	Json "Secret-manager/pkg/json"
 )
 
 func GetVaultToken(w http.ResponseWriter, r *http.Request) {
