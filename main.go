@@ -1,10 +1,10 @@
 package main
 
 import (
+	vault "Secret-manager/pkg/vault"
 	"encoding/json"
 	"fmt"
 	"net/http"
-	vault "telnetapp/pkg/vault"
 )
 
 type CustomErrorResponse struct {
