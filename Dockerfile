@@ -18,7 +18,7 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /app/secret-server
 
 # Stage 2: Final stage - using a minimal Alpine image
-FROM alpine:alpine
+FROM alpine
 
 WORKDIR /app/
 
