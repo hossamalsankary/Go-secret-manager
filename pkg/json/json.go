@@ -1,6 +1,5 @@
 package json
 
 var VaultJson = map[string]string{
-	"token":  "J454646464fdfd444jbsjkajsabjsbnajksbajkbsjkabsjkabsj",
-	"token2": "J454646464fdfd444jbsjkajsabjsbnajksbajkbsjkabsjkabsj",
+	"token": "GKlY8jY9qomEIt29pCTjVzbjaOzZAkIooYMH0yy29bnsxNe9WmkpJQQJ99AKACAAAAAsvdphAAASAZDOgpqS",
 }
